@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 import Home from '../home/Home';
 import Hotels from '../hotels/Hotels';
-import About from '../about/About';
 import Contact from '../contact/Contact';
 
 function Menu() {
@@ -23,9 +22,6 @@ function Menu() {
           <NavLink to="/hotels" className="p-2 hover:bg-blue-200">
             Hotels
           </NavLink>
-          <NavLink to="/about" className="p-2 hover:bg-blue-200">
-            About
-          </NavLink>
           <NavLink to="/contact" className="p-2 hover:bg-blue-200">
             Contact
           </NavLink>
@@ -34,7 +30,6 @@ function Menu() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/hotels" component={Hotels} />
-        <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
       </Switch>
     </Router>
