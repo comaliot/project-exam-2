@@ -53,7 +53,7 @@ function Contact() {
                 <textarea
                   className="form-textarea mt-1 block w-full appearance-none block bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight"
                   rows="5"
-                  placeholder="Enter some long form content."
+                  placeholder="Enter your message and our team will get back to you within 15 minutes"
                 ></textarea>
               </label>
             </div>

@@ -43,11 +43,6 @@ function Home() {
         </h3>
         <div className="flex flex-col sm:flex-row sm:grid sm:grid-cols-2 sm:gap-12 md:grid-cols-3 2xl:grid-col-4">
           <HotelCard />
-          <HotelCard />
-          <HotelCard />
-          <HotelCard />
-          <HotelCard />
-          <HotelCard />
         </div>
       </div>
 

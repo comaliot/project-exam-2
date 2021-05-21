@@ -11,11 +11,6 @@ function Hotels() {
 
       <div className="lg:grid lg:grid-cols-2 lg:gap-4">
         <HotelHorizontalCard />
-        <HotelHorizontalCard />
-        <HotelHorizontalCard />
-        <HotelHorizontalCard />
-        <HotelHorizontalCard />
-        <HotelHorizontalCard />
       </div>
 
       <Footer />
