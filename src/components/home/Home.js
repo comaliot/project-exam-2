@@ -1,11 +1,11 @@
 import React from 'react';
 import Paragraph from '../Paragraph';
 import HeaderImage from '../../media/HeaderImage.jpg';
-import HotelCard from '../HotelCard';
+import HotelCard from '../hotels/HotelCard';
 import Benefits from '../layout/Benefits';
 import Footer from '../layout/Footer';
 
-function Home() {
+function Home({ setSearctTerm }) {
   return (
     <>
       <div className="flex flex-col justify-between items-center sm:flex-row my-10 mb-6 lg:my-20 lg:mb-6 rounded-lg bg-gray-50 shadow p-6">

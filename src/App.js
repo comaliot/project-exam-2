@@ -4,8 +4,7 @@ import Home from './components/home/Home';
 import Hotels from './components/hotels/Hotels';
 import Contact from './components/contact/Contact';
 import HotelView from './components/hotels/HotelView';
-
-import './App.css';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -16,7 +15,8 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/hotels" component={Hotels} />
           <Route path="/contact" component={Contact} />
-          <Route path="/hotel" component={HotelView} />
+          <Route path="/hotel/:id" component={HotelView} />
+          <Route path="/login" component={Login} />
         </Switch>
       </Router>
     </div>

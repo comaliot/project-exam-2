@@ -1,20 +1,21 @@
 import React from 'react';
+import DateRangePicker from './DateRangePicker';
 
 function EnquiryForm() {
   return (
     <>
-      <div className="w-full max-w-xs">
+      <div className="w-full mt-4">
         <form className="bg-gray-50 shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
-              for="first_name"
+              htmlFor="firstName"
             >
               First name
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="username"
+              id="firstName"
               type="text"
               placeholder="First name"
             />
@@ -22,34 +23,49 @@ function EnquiryForm() {
           <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
-              for="last_name"
+              htmlFor="last_name"
             >
               Last name
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight "
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight "
               id="last_name"
               type="text"
               placeholder="Last name"
             />
           </div>
-          <div className="w-full mb-4 ">
+          <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
-              for="number_of_people"
+              htmlFor="email"
+            >
+              Email
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight "
+              id="email"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <div className="w-full mb-4">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="number_of_people"
             >
               Number of people
             </label>
             <div className="relative">
               <select
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight"
                 id="grid-state"
               >
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 or more</option>
+                <option value="">Select amount of people</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5 or more</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                 <svg
@@ -62,14 +78,14 @@ function EnquiryForm() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-between">
-            <button
-              className="py-2 px-8 rounded-r-lg rounded-l-lg bg-yellow-500 text-gray-50 font-medium uppercase border-yellow-600 border"
-              type="button"
-            >
-              Sign In
-            </button>
+
+          <div className="w-full mb-4">
+            <DateRangePicker />
           </div>
+
+          <button className="mt-4 px-6 py-2 rounded-r-lg rounded-l-lg  text-yellow-500 font-medium uppercase border-yellow-500 border">
+            Book
+          </button>
         </form>
       </div>
     </>
