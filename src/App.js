@@ -8,7 +8,7 @@ import Login from './components/Login';
 
 function App() {
   return (
-    <div className="container px-4 mx-auto">
+    <div className="font-body container px-4 mx-auto">
       <Router>
         <Menu />
         <Switch>
